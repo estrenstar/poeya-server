@@ -9,10 +9,10 @@ const router = express.Router();
 
 function setSignInCookies(res, response) {
   const cookiesOptions = { maxAge: COOKIE_MAX_AGE, httpOnly: true };
-  if (process.env.NODE_ENV !== 'development') {
-    cookiesOptions.sameSite = 'none';
-    cookiesOptions.secure = true;
-  }
+  // if (process.env.NODE_ENV !== 'development') {
+  //   cookiesOptions.sameSite = 'none';
+  //   cookiesOptions.secure = true;
+  // }
   res.cookie(TOKEN_COOKIE, response.data.token, cookiesOptions);
 }
 
