@@ -10,6 +10,8 @@ const authRoutes = require('./routes/auth.routes');
 const accountsRoutes = require('./routes/accounts.routes');
 const surveysRoutes = require('./routes/surveys.routes');
 
+const path = require('path')
+
 const { isValidValue } = require('../../../application/_helpers/dataValidator.helper');
 const { ROLES } = require('../../../database/enums');
 
@@ -28,6 +30,12 @@ function start(port) {
 
   app.use(errorMiddleware);
 
+  app.use(express.static(path.join(__dirname, '../../../client/build')));
+
+  // Serve the React app for all routes (this should be the last route)
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../../client/build', 'index.html'));
+  });
   return new Promise((resolve) => {
     app.listen(port, resolve);
   });

@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/pages/surveys/Survey.js"],"names":["Survey","_jsx","children"],"mappings":"wHAAA,uBAMeA,UAJf,WACE,OAAOC,cAAA,OAAAC,SAAK,UACd,C","file":"static/js/9.c93c802d.chunk.js","sourcesContent":["import React from 'react';\n\nfunction Survey() {\n  return <div>Survey</div>;\n}\n\nexport default Survey;\n"],"sourceRoot":""}

@@ -1,6 +1,7 @@
 {
   "name": "survey-server",
   "version": "1.0.0",
+  "homepage": ".",
   "description": "Survey console backend server using Express, MongoDB",
   "main": "index.js",
   "scripts": {
