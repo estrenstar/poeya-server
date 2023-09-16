@@ -1,0 +1,21 @@
+{
+  "name": "poeya-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "web": "cd frontend && npm i && npm start",
+    "server": "cd backend && npm i && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estrenstar/poeya-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estrenstar/poeya-server/issues"
+  },
+  "homepage": "https://github.com/estrenstar/poeya-server#readme"
+}
